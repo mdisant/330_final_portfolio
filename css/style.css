@@ -96,6 +96,7 @@ nav {
 #current {
     background-color: white;
     padding: 5px;
+    text-decoration: underline;
 }
 
 #home {

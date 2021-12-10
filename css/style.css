@@ -1,0 +1,473 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", serif;   
+    background: white;
+}
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 28px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    text-align: center;
+}
+
+h4 {
+    font-size: 24px;
+    margin-left: 5px;
+    margin-bottom: 8px;
+    margin-top: 10px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+li {
+    font-size:18px;
+    margin-left: 25px;
+    line-height: 27px;
+    margin-right: 5px;
+}
+
+a.skip{
+    background: white;
+    left: 0;
+    padding: 6px;
+    position: absolute;
+    top: -50px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+  }
+  
+  a.skip:focus{
+    top:15px;
+  }
+
+header {
+    background-color: lightblue;
+    position: sticky;
+    top: 0;
+}
+
+#logo {
+    width: 250px;
+}
+
+nav {
+    display: flex;
+}
+
+.nav_links {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nav_item a {
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    color: black;
+}
+
+#current {
+    background-color: white;
+    padding: 5px;
+}
+
+#home {
+    display: flex;
+    flex-direction: column;
+}
+
+#coursework {
+    display: flex;
+    flex-direction: column;
+}
+
+#experience {
+    display: flex;
+    flex-direction: column;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 6px solid lightblue;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#headshot {
+    max-width: 75%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+#signature {
+    max-width:50%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#interests .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5px;
+    margin: 5px;
+}
+
+.interest_image {
+    width: 95%;
+    margin: auto;
+}
+
+.interests_text {
+    text-align: center;
+    margin: auto;
+}
+
+.job {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.job h3{
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.course a {
+    color:  #0000FF;
+}
+
+.job h3, .job a {
+    color: black;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: lightblue;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p, footer a {
+    font-size: 14px;
+    font-weight: bold;
+    color: black;
+    margin: auto;
+}
+
+@media screen and (min-width: 750px) {
+    .nav_links {
+        flex-direction: row;
+    }
+
+    nav {
+        justify-content: space-around;
+    }
+
+    .nav_item {
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    .nav_item a {
+        font-size: 24px;
+    }
+
+    #logo {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 300px;
+    }
+
+    #interests .content {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
+    label {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        font-size: 24px;
+    }
+
+    footer p, footer a {
+        font-size: 24px;
+    }
+
+    form {
+        width: 75%;
+    }
+
+    input {
+        font-size: 20px;
+        margin-top: 10px;
+        border: 2px solid gray;
+        border-radius: 10px;
+    }
+
+    textarea {
+        font-size: 20px;
+        border: 2px solid gray;
+        border-radius: 10px;
+    }
+
+    .content {
+        margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    #main_page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    #headshot {
+        grid-row: 1 / 3;
+        max-width: 50%;
+        margin: auto;
+    }
+
+    #main_page h3 {
+        margin-top: 150px;
+    }
+
+    #main_page p {
+        margin-right: 30px;
+    }
+
+    #signature {
+        grid-row: 3 / 3;
+        grid-column: 1 / 3;
+        margin: auto;
+    }
+    #coursework .content {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #umsi_image { 
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 2;
+        width: 60%;
+        margin: 75px auto auto auto;
+    }
+
+    .course {
+        margin: 10px 80px auto 80px;
+    }
+
+    #experience .content {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .job {
+        margin: auto;
+    }
+
+    .job h3 {
+        text-align: center;
+    }
+
+    .job h4 {
+        margin-top: 25px;
+    }
+
+    #kpmg_text {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #kpmg_image {
+        grid-row: 1 / span 1;
+        grid-column: 2 / span 1;
+        width: 50%;
+        margin: auto auto auto 10px;
+    }
+
+    #reach_text {
+        grid-row: 2 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #reach_image {
+        grid-row: 2 / span 1;
+        grid-column: 1 / span 1;
+        width: 50%;
+        margin: auto 10px auto auto;
+    }
+
+    #nyu_text {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #nyu_image {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+        width: 25%;
+        margin: auto auto auto 10px;
+    }
+
+    #capital_text {
+        grid-row: 4 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #capital_image {
+        grid-row: 4 / span 1;
+        grid-column: 1 / span 1;
+        width: 50%;
+        margin: auto 10px auto auto;
+    }
+
+    #interests .content {
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 0;
+    }
+
+    #yankees_image {
+        grid-row: 1 / span 1;
+        grid-column: 1 / span 1;
+    }
+
+    #yankees_text {
+        grid-row: 1 / span 1;;
+        grid-column: 2 / span 1;
+    }
+
+    #michigan_image {
+        grid-row: 1 / span 1;
+        grid-column: 5 / span 1;
+    }
+    
+    #michigan_text {
+        grid-row: 1 / span 1;;
+        grid-column: 6 / span 1;
+        margin: auto 12px auto auto;
+    }
+
+    #knicks_image {
+        grid-row: 2 / span 1;;
+        grid-column: 3 / span 1;;
+    }
+    
+    #knicks_text {
+        grid-row: 2 / span 1;
+        grid-column: 4 / span 1;;
+    }
+
+    #python_image {
+        grid-row: 3 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #python_text {
+        grid-row: 3 / span 1;
+        grid-column: 2 / span 1;
+    }
+
+    #bitcoin_image {
+        grid-row: 3 / span 1;
+        grid-column: 5 / span 1;
+    }
+    
+    #bitcoin_text {
+        grid-row: 3 / span 1;
+        grid-column: 6 / span 1; 
+        margin: auto 12px auto auto;
+    }
+
+    #italy_image {
+        grid-row: 4 / span 1;
+        grid-column: 3 / span 1;
+    }
+    
+    #italy_text {
+        grid-row: 4 / span 1;
+        grid-column: 4 / span 1;
+    }
+
+    #giants_image {
+        grid-row: 5 / span 1;
+        grid-column: 1 / span 1;
+    }
+    
+    #giants_text {
+        grid-row: 5 / span 1;
+        grid-column: 2 / span 1;  
+    }
+
+    #nyt_image {
+        grid-row: 5 / span 1;
+        grid-column: 5 / span 1;
+    }
+    
+    #nyt_text {
+        grid-row: 5 / span 1;
+        grid-column: 6 / span 1; 
+        margin: auto 12px auto auto;  
+    }
+
+    #stocks_image {
+        grid-row: 6 / span 1;
+        grid-column: 3 / span 1;
+    }
+    
+    #stocks_text {
+        grid-row: 6 / span 1;
+        grid-column: 4 / span 1;  
+    }
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" type="image/png" href="images/mpd.png">
+
+        <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+
+        <title>Contact</title>
+    </head>
+    
+    <body>
+        <a class = "skip" href = "#contact">Skip to Content</a>
+        <header>
+            <nav>
+                <img src="images/logo.png" alt="MPD" id="logo">
+                <ul class="nav_links">
+                  <li class="nav_item"><a href="index.html">Home</a></li>
+                  <li class="nav_item"><a href="coursework.html">Coursework</a></li>
+                  <li class="nav_item"><a href="experience.html">Experience</a></li>
+                  <li class="nav_item"><a href="interests.html">Interests</a></li>
+                  <li class="nav_item" id="current"><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main id="contact">
+            <div class="top_page">
+                <h1>Contact</h1>
+                <h2>Use this form to reach out!</h2>
+            </div>
+
+            <div class="content">
+                <form action="submission.html" method="POST">
+                    <label for="name">Your Name</label>
+                    <input type="text" name="name" id="name" placeholder="Michael DiSanto">
+                    
+                    <label for="email">Your Email</label>
+                    <input type="text" name="email" id="email" placeholder="mdisant@umich.edu">
+
+                    <label for="phone_number">Phone Number</label>
+                    <input type="text" name="phone_number" id="phone_number" placeholder="123-456-7890">
+
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" placeholder="Subject">
+
+                    <label for="message">Message</label>
+                    <textarea type="text" name="message" id="message" placeholder="Type your message here..." rows="8" cols="40"></textarea>
+
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </main>
+
+        <footer>
+            <p>mdisant@umich.edu | (914) 403-1696 | <a href = "https://www.linkedin.com/in/mpdisanto">View LinkedIn</a> <br/>
+                &copy; Michael DiSanto - 2021</p>
+        </footer>
+    </body>
+</html>
